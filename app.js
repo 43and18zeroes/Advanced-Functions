@@ -52,9 +52,19 @@ function printHobbies(h) {
 
 printHobbies(hobbies);
 
-function calculateTax(amount, tax) {
-  return amount * tax;
+function createTaxCalculator(tax) {
+  function calculateTax(amount) {
+    return amount * tax;
+  }
+
+  return calculateTax;
 }
 
-const vatAmount = calculateTax(100, 0.19);
-const incomeTax = calculateTax(100, 0.25);
+const calculateVatAmount = createTaxCalculator(0.19);
+const calculateIncomeTaxAmount = createTaxCalculator(0.25);
+
+console.log(calculateVatAmount);
+console.log(calculateIncomeTaxAmount);
+
+console.log(calculateVatAmount(100));
+console.log(calculateIncomeTaxAmount(200));
