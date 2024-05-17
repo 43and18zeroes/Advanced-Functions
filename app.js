@@ -27,7 +27,27 @@ console.log(add4(1, 5)); // 6
 
 // Impure because we cannot predict the outcome
 function addRandom(num1) {
-    return num1 + Math.random();
+  return num1 + Math.random();
 }
 
 console.log(addRandom(5));
+
+let otherResult = 0;
+
+// Impure because it chances an outside value
+function addMoreNumbers(num1, num2) {
+  const sum = num1 + num2;
+  otherResult = sum;
+  return sum;
+}
+
+console.log(addMoreNumbers(1, 5));
+
+const hobbies = ['Sports', 'Cookies'];
+
+function printHobbies(h) {
+  h.push('NEW HOBBY');
+  console.log(h);
+}
+
+printHobbies(hobbies);
