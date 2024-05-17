@@ -72,10 +72,12 @@ console.log(calculateIncomeTaxAmount(200));
 let userName = 'Max';
 
 function greetUser() {
-  let name = userName;
+  // let name = 'Anna';
   console.log('Hi ' + name);
 }
 
+let name = 'Maximilian';
+
 userName = 'Manuel';
 
-greetUser(); // Hi Manuel
+greetUser(); // Hi Maximilian
