@@ -69,17 +69,4 @@ console.log(calculateIncomeTaxAmount);
 console.log(calculateVatAmount(100));
 console.log(calculateIncomeTaxAmount(200));
 
-function createCounter() {
-  let count = 0; // Diese Variable ist im Scope der äußeren Funktion
 
-  return function() {
-      count++; // Die innere Funktion greift auf die Variable der äußeren Funktion zu
-      return count;
-  };
-}
-
-const counter = createCounter(); // createCounter wird aufgerufen und gibt die innere Funktion zurück
-
-console.log(counter()); // Ausgabe: 1
-console.log(counter()); // Ausgabe: 2
-console.log(counter()); // Ausgabe: 3
