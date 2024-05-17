@@ -70,3 +70,10 @@ console.log(calculateVatAmount(100));
 console.log(calculateIncomeTaxAmount(200));
 
 
+let userName = 'Max';
+
+function greetUser() {
+  console.log('Hi ' + userName);
+}
+
+greetUser();
