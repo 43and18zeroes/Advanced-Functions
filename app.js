@@ -120,14 +120,19 @@ const myself = {
   ],
 };
 
-function printFriendNames(person) {
+function getFriendNames(person) {
   const collectedNames = [];
 
+  if (!person.friends) {
+    return [];
+  }
+
   for (const friend of person.friends) {
-    printFriendNames(friend);
+    collectedNames.push(friend.name);
+    collectedNames.push(...getFriendNames(friend));
   }
 
   return collectedNames;
 }
 
-console.log(printFriendNames(myself));
+console.log(getFriendNames(myself));
