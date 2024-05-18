@@ -146,11 +146,7 @@ function getFriendNames(person) {
 
 console.log(getFriendNames(myself)); // ['Manuel', 'Chris', 'Hari', 'Amilia', 'Julia']
 
-
-let array1 = [1, 2, 3];
-let array2 = [4, 5, 6];
-
-// Elemente mit Spread-Operator hinzufügen
-array1.push(...array2);
-
-console.log(array1); // Ausgabe: [1, 2, 3, 4, 5, 6]
+let defaultValue = 10;
+function addNumber(num) {
+    return num + defaultValue;
+}
