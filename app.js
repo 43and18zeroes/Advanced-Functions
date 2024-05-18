@@ -146,7 +146,3 @@ function getFriendNames(person) {
 
 console.log(getFriendNames(myself)); // ['Manuel', 'Chris', 'Hari', 'Amilia', 'Julia']
 
-let defaultValue = 10;
-function addNumber(num) {
-    return num + defaultValue;
-}
