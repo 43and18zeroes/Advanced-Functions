@@ -82,14 +82,3 @@ userName = 'Manuel';
 
 greetUser(); // Hi Maximilian
 
-let clipboardContent;
-
-navigator.clipboard
-  .readText()
-  .then(text => {
-    clipboardContent = text;
-    console.log(`Deine Nummer ist ${clipboardContent}`);
-  })
-  .catch(err => {
-    console.error('Fehler beim Lesen der Zwischenablage: ', err);
-  });
