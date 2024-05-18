@@ -110,12 +110,24 @@ const myself = {
       name: 'Manuel',
       friends: [
         {
-          name: 'Chris'
-        }
-      ]
+          name: 'Chris',
+        },
+      ],
     },
     {
-      name: 'Julia'
-    }
-  ]
+      name: 'Julia',
+    },
+  ],
+};
+
+function printFriendNames(person) {
+  const collectedNames = [];
+
+  for (const friend of person.friends) {
+    printFriendNames(friend);
+  }
+
+  return collectedNames;
 }
+
+console.log(printFriendNames(myself));
