@@ -144,4 +144,4 @@ function getFriendNames(person) {
   return collectedNames;
 }
 
-console.log(getFriendNames(myself));
+console.log(getFriendNames(myself)); // ['Manuel', 'Chris', 'Hari', 'Amilia', 'Julia']
