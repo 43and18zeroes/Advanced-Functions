@@ -94,7 +94,6 @@ greetUser(); // Hi Maximilian
 // }
 
 function powerOf(x, n) {
-  console.log('n: ', n);
   if (n === 1) {
     return x;
   }
