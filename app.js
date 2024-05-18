@@ -111,6 +111,14 @@ const myself = {
       friends: [
         {
           name: 'Chris',
+          friends: [
+            {
+              name: 'Hari',
+            },
+            {
+              name: 'Amilia',
+            },
+          ],
         },
       ],
     },
@@ -123,6 +131,7 @@ const myself = {
 function getFriendNames(person) {
   const collectedNames = [];
 
+  // Without an exit condition we would have an infinite loop
   if (!person.friends) {
     return [];
   }
