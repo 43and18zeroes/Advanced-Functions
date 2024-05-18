@@ -82,15 +82,23 @@ userName = 'Manuel';
 
 greetUser(); // Hi Maximilian
 
+// function powerOf(x, n) {
+//   let result = 1;
+
+//   for (let i = 0; i < n; i++) {
+//     // result = result * x;
+//     result *= x;
+//   }
+
+//   return result;
+// }
+
 function powerOf(x, n) {
-  let result = 1;
-
-  for (let i = 0; i < n; i++) {
-    // result = result * x;
-    result *= x;
+  console.log('n: ', n);
+  if (n === 1) {
+    return x;
   }
-
-  return result;
+  return x * powerOf(x, n - 1);
 }
 
 console.log(powerOf(2, 3)); // 8
