@@ -81,10 +81,3 @@ let name = 'Maximilian';
 userName = 'Manuel';
 
 greetUser(); // Hi Maximilian
-
-{
-  const age = 30;
-  console.log(age); // 30
-}
-
-console.log(age); // Error: "age is not defined"
